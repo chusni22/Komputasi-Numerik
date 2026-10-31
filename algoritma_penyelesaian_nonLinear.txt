@@ -1,0 +1,14 @@
+ALGORITMA METODE BISECTION (BAGI DUA) UNTUK PERSAMAAN NON-LINEAR
+
+1. Mulai.
+2. Definisikan fungsi non-linear f(x).
+3. Tentukan batas bawah (xl) dan batas atas (xu) sedemikian rupa sehingga terjadi perubahan tanda pada interval tersebut (f(xl) * f(xu) < 0).
+4. Tentukan toleransi error (ε) dan jumlah iterasi maksimum (N_max).
+5. Hitung nilai taksiran akar awal (xr): xr = (xl + xu) / 2.
+6. Evaluasi nilai f(xr):
+   - Jika f(xl) * f(xr) < 0, maka akar berada di sub-interval kiri: set xu = xr.
+   - Jika f(xl) * f(xr) > 0, maka akar berada di sub-interval kanan: set xl = xr.
+   - Jika f(xl) * f(xr) == 0, maka xr adalah akar eksak, iterasi selesai.
+7. Periksa kriteria penghentian (error absolut atau iterasi maksimum tercapai). Jika belum terpenuhi, kembali ke langkah 5.
+8. Cetak nilai akar akhir xr.
+9. Selesai.
