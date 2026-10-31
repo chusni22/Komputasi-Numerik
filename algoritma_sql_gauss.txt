@@ -1,0 +1,17 @@
+ALGORITMA ELIMINASI GAUSS UNTUK SISTEM PERSAMAAN LINEAR 3 VARIABEL (SPLTV)
+
+1. Mulai.
+2. Definisikan matriks augmented [A|b] yang berukuran 3x4 untuk sistem persamaan linear 3 variabel:
+   a11*x1 + a12*x2 + a13*x3 = b1
+   a21*x1 + a22*x2 + a23*x3 = b2
+   a31*x1 + a32*x2 + a33*x3 = b3
+3. Proses Eliminasi Maju (Forward Elimination) untuk membentuk matriks segitiga atas:
+   - Pastikan elemen pivot pertama (a11) tidak sama dengan nol. Jika nol, lakukan pertukaran baris.
+   - Hitung faktor pengali untuk baris ke-2 dan ke-3, lalu kurangkan dengan baris pertama sedemikian rupa sehingga elemen di bawah diagonal utama (kolom 1 baris 2 dan 3) bernilai 0[cite: 4, 7].
+   - Ulangi langkah serupa untuk membuat elemen di bawah diagonal utama kolom ke-2 menjadi 0[cite: 7].
+4. Proses Penyulihan Mundur (Back Substitution) untuk mencari nilai variabel x3, x2, dan x1:
+   - Hitung x3 dari baris ke-3 yang sekarang sudah berbentuk a33*x3 = b3[cite: 7, 8].
+   - Substitusikan nilai x3 ke persamaan baris ke-2 untuk mendapatkan x2.
+   - Substitusikan nilai x2 dan x3 ke persamaan baris pertama untuk mendapatkan x1[cite: 8].
+5. Tampilkan hasil nilai x1, x2, dan x3.
+6. Selesai.
